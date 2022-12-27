@@ -3,5 +3,5 @@
     <app-title-h1 type="danger" text="LISTA DE USUARIOS"></app-title-h1>
   </div>
   <div class="col-12">
-    <app-card-user [data]="user"></app-card-user>
+    <app-card-user [data]="user" *ngFor="let user of users;" class="col-12 col-md-6 col-lg-4 col-xl-3"></app-card-user>
   </div>
